@@ -1,0 +1,26 @@
+{
+  "name": "image_search",
+  "version": "1.0.0",
+  "description": "image search analyzer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/averageAZNguy/image_search.git"
+  },
+  "author": "Quang-Thuy Hoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/averageAZNguy/image_search/issues"
+  },
+  "homepage": "https://github.com/averageAZNguy/image_search#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "google-images": "^2.1.0",
+    "mongoose": "^4.11.7"
+  }
+}
