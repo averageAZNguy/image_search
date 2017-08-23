@@ -8,10 +8,12 @@ var express = require('express'),
 	urldb = process.env.MONGOLAB_URI;
 
 app.use(bodyparser.urlencoded({extended: true}))
+app.use(express.static('css'));
 app.set('view engine','ejs');
 
 // SETUP & CONNECT TO MONGODB
-mongoose.connect('mongodb://localhost/imagesearch');
+mongoose.connect(urldb);
+
 var imgSchema = new mongoose.Schema({
 	query: String,
 	timestamp: {type: Date, default: Date.now}
